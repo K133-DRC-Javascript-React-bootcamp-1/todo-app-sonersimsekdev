@@ -6,7 +6,7 @@ const TodoList = () => {
 	const todos = useSelector((state)=>{
 		return state.todos;
 	});
-
+ //listing todoitems
 	return (
 		<ul className="tasks-list">
 			{todos.map((todo) => (

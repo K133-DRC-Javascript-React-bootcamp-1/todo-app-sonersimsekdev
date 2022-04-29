@@ -2,12 +2,14 @@ import React from 'react';
 import { useDispatch } from "react-redux";
 import { deleteTask } from "../redux/todoSlice";
 
+
+//todoitem and actions
 const TodoItem = ({ id, title }) => {
 
 	const dispatch = useDispatch();
 
 	const removeTask=()=>{
-		dispatch(
+		dispatch(//deleting task using dispatch
 			deleteTask({
 				id: id
 			})

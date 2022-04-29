@@ -6,3 +6,5 @@ export default configureStore({
       todos: todoReducer,
   },
 })
+
+//default store file

@@ -9,15 +9,15 @@ const AddTodo = () => {
 
 	const onSubmit = (event) => {
 		event.preventDefault();
-
+		//input value
 		if(value.trim().length === 0)
 		{
 			alert("Enter a task before adding !!");
 			setValue("");
 			return;
-		}
+		}//if input value is empty , this code block are runnig
 
-		dispatch(
+		dispatch(//else thist code block running
 			addTask({
 				task: value
 			})
